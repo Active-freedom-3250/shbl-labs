@@ -176,68 +176,67 @@
 
     
 <body>
-<!-- Barra lateral transparente con secciones -->
-<div class="barra-lista">
-    <div class="grupo">
-        <div class="titulo-grupo">Navegación</div>
-        <a href="#inicio">Inicio</a>
-        <a href="#perfil">Perfil</a>
+<!-- Listas en el costado sin "barra" -->
+<div class="lista-costado">
+    <div class="grupo-lista">
+        <div class="titulo-lista">Navegación</div>
+        <div class="item-lista">Inicio</div>
+        <div class="item-lista">Perfil</div>
     </div>
     
-    <hr>
+    <div class="linea-separadora"></div>
     
-    <div class="grupo">
-        <div class="titulo-grupo">RF Lab</div>
-        <a href="#circuitos">Circuitos</a>
-        <a href="#antenas">Antenas</a>
+    <div class="grupo-lista">
+        <div class="titulo-lista">RF Lab</div>
+        <div class="item-lista">Circuitos</div>
+        <div class="item-lista">Antenas</div>
+        <div class="item-lista">Simulación</div>
     </div>
     
-    <hr>
+    <div class="linea-separadora"></div>
     
-    <div class="grupo">
-        <div class="titulo-grupo">Contenido</div>
-        <a href="#articulos">Artículos</a>
-        <a href="#blog">Blog</a>
+    <div class="grupo-lista">
+        <div class="titulo-lista">Contenido</div>
+        <div class="item-lista">Artículos</div>
+        <div class="item-lista">Blog</div>
     </div>
 </div>
 
 <style>
-.barra-lista {
+.lista-costado {
     position: fixed;
-    left: 0;
-    top: 0;
-    width: 180px;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.15); /* TRANSPARENTE */
-    backdrop-filter: blur(3px); /* Efecto vidrio */
-    padding: 15px;
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    left: 20px;  /* Separado del borde */
+    top: 20px;
+    width: 160px;
 }
 
-.titulo-grupo {
+.grupo-lista {
+    margin-bottom: 15px;
+}
+
+.titulo-lista {
     font-weight: bold;
-    margin: 10px 0 5px 0;
     color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
-.barra-lista a {
-    display: block;
-    color: #333;
-    text-decoration: none;
-    padding: 6px 8px;
-    margin: 3px 0;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 4px;
+.item-lista {
+    color: #555;
+    padding: 5px 0;
+    font-size: 13px;
+    cursor: pointer;
 }
 
-.barra-lista a:hover {
-    background: rgba(255, 255, 255, 0.15);
+.item-lista:hover {
+    color: #0066cc;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+.linea-separadora {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ddd, transparent);
     margin: 15px 0;
+    width: 100%;
 }
 
 body {
