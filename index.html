@@ -176,6 +176,7 @@
 
     
 <body>
+<!-- BARRA LATERAL ELEGANTE -->
 <div class="lateral-cajas">
     <div class="item-lateral">
         <span class="icono">🏠</span>
@@ -191,7 +192,14 @@
     </div>
 </div>
 
+<!-- ENVUELVE TODO tu contenido con esto: -->
+<div class="contenido-con-margen">
+    <!-- PEGA AQUÍ todo tu HTML actual -->
+    <!-- Tu header, mission, sections, footer, etc. -->
+</div>
+
 <style>
+/* BARRA LATERAL */
 .lateral-cajas {
     position: fixed;
     left: 0;
@@ -235,11 +243,22 @@
     font-weight: 500;
 }
 
-body {
+/* CONTENIDO CON MARGEN (¡Solo esto se mueve!) */
+.contenido-con-margen {
     margin-left: 150px;
+    padding: 20px;
+    max-width: 800px; /* Opcional: mantener el ancho máximo que tenías */
+    margin-right: auto;
+}
+
+/* Si tu body tenía estilos específicos, mantenlos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0; /* Importante: quitar márgenes por defecto */
+    padding: 0;
 }
 </style>
-
     <header>
         <h1>Al-Hujjah☪circuits</h1>
         <p class="tagline">Dedicated to the awaited Imam of our times</p>
