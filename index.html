@@ -205,7 +205,7 @@
 <style>
 .lista-costado {
     position: fixed;
-    left: 20px;  /* Separado del borde */
+    left: 20px;
     top: 20px;
     width: 160px;
 }
@@ -216,25 +216,28 @@
 
 .titulo-lista {
     font-weight: bold;
-    color: #333;
+    color: white; /* CAMBIADO A BLANCO */
     margin-bottom: 8px;
     font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .item-lista {
-    color: #555;
+    color: white; /* CAMBIADO A BLANCO */
     padding: 5px 0;
     font-size: 13px;
     cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .item-lista:hover {
-    color: #0066cc;
+    color: #fff; /* Mantener blanco en hover */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
 
 .linea-separadora {
     height: 1px;
-    background: linear-gradient(to right, transparent, #ddd, transparent);
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.5), transparent); /* Más visible sobre fondos oscuros */
     margin: 15px 0;
     width: 100%;
 }
@@ -252,13 +255,6 @@ body {
         <div class="section">
             <h2>New features</h2>
             <p>Coming soon</p>
-        </div>
-        
-        <div class="sections">
-            <div class="section">
-                <h3>40m morse transmiter </h3>
-                <p>Coming soon</p>
-            </div>
         </div>
         
     </div>
