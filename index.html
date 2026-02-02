@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shbl-Labs | Portal Principal</title>
+    <title>Al-Hujjah circuits</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -176,12 +176,31 @@
 
     
 <body>
-    <nav class="sidebar">
-        <!-- Botones de la barra lateral -->
-        <a href="#inicio">🏠 Inicio</a>
-        <a href="#rf">📡 RF Lab</a>
-        <a href="#ciencia">🔬 Ciencia</a>
-    </nav>
+    <style>
+        /* Barra lateral */
+        .lateral {
+            position: fixed;
+            left: 0; top: 0;
+            width: 150px;
+            height: 100%;
+            background: gray;
+            padding: 10px;
+        }
+        
+        /* Contenido */
+        .contenido {
+            margin-left: 170px;
+            padding: 20px;
+        }
+    </style>
+    
+    <!-- Barra con 3 botones -->
+    <div class="lateral">
+        <a href="#inicio" style="display:block; margin:10px 0;">Inicio</a>
+        <a href="#rf" style="display:block; margin:10px 0;">RF Lab</a>
+        <a href="#ciencia" style="display:block; margin:10px 0;">Ciencia</a>
+    </div>
+
     <header>
         <h1>Al-Hujjah☪circuits</h1>
         <p class="tagline">Dedicated to the awaited Imam of our times</p>
