@@ -176,63 +176,69 @@
 
     
 <body>
-<div style="
+<div class="lateral-cajas">
+    <div class="item-lateral">
+        <span class="icono">🏠</span>
+        <span class="texto">Inicio</span>
+    </div>
+    <div class="item-lateral">
+        <span class="icono">📡</span>
+        <span class="texto">RF Lab</span>
+    </div>
+    <div class="item-lateral">
+        <span class="icono">🔬</span>
+        <span class="texto">Ciencia</span>
+    </div>
+</div>
+
+<style>
+.lateral-cajas {
     position: fixed;
     left: 0;
     top: 0;
-    width: 180px;
+    width: 130px;
     height: 100vh;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    border-right: 1px solid rgba(255, 255, 255, 0.2);
-    padding: 25px 15px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(3px);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    padding: 20px 10px;
     z-index: 1000;
-">
-    <a href="#inicio" style="
-        display: block;
-        color: black;
-        text-decoration: none;
-        padding: 14px 10px;
-        margin: 12px 0;
-        background: rgba(255, 255, 255, 0.9);
-        border: 2px solid rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 15px;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    ">🏠 Inicio</a>
-    
-    <a href="#rf" style="
-        display: block;
-        color: black;
-        text-decoration: none;
-        padding: 14px 10px;
-        margin: 12px 0;
-        background: rgba(255, 255, 255, 0.9);
-        border: 2px solid rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 15px;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    ">📡 RF Lab</a>
-    
-    <a href="#ciencia" style="
-        display: block;
-        color: black;
-        text-decoration: none;
-        padding: 14px 10px;
-        margin: 12px 0;
-        background: rgba(255, 255, 255, 0.9);
-        border: 2px solid rgba(0, 0, 0, 0.2);
-        border-radius: 8px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 15px;
-        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
-    ">🔬 Ciencia</a>
-</div>
+}
+
+.item-lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding: 14px 10px;
+    margin: 12px 0;
+    background: rgba(255,255,255,0.9);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.item-lateral:hover {
+    background: white;
+    border-color: rgba(0,102,204,0.3);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.icono {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.texto {
+    font-weight: 500;
+}
+
+body {
+    margin-left: 150px;
+}
+</style>
 
     <header>
         <h1>Al-Hujjah☪circuits</h1>
