@@ -176,7 +176,7 @@
 
     
 <body>
-<!-- Barra lateral simple con secciones -->
+<!-- Barra lateral transparente con secciones -->
 <div class="barra-lista">
     <div class="grupo">
         <div class="titulo-grupo">Navegación</div>
@@ -208,9 +208,10 @@
     top: 0;
     width: 180px;
     height: 100vh;
-    background: white;
+    background: rgba(255, 255, 255, 0.15); /* TRANSPARENTE */
+    backdrop-filter: blur(3px); /* Efecto vidrio */
     padding: 15px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .titulo-grupo {
@@ -221,19 +222,21 @@
 
 .barra-lista a {
     display: block;
-    color: #0066cc;
+    color: #333;
     text-decoration: none;
-    padding: 5px;
-    margin: 2px 0;
+    padding: 6px 8px;
+    margin: 3px 0;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
 }
 
 .barra-lista a:hover {
-    background: #f0f0f0;
+    background: rgba(255, 255, 255, 0.9);
 }
 
 hr {
     border: none;
-    border-top: 1px solid #eee;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     margin: 15px 0;
 }
 
@@ -241,11 +244,6 @@ body {
     margin-left: 200px;
 }
 </style>
-
-
-
-
-    
     <header>
         <h1>Al-Hujjah☪circuits</h1>
         <p class="tagline">Dedicated to the awaited Imam of our times</p>
