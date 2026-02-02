@@ -176,30 +176,20 @@
 
     
 <body>
-<!-- BARRA LATERAL ELEGANTE -->
+<!-- 1. BARRA LATERAL -->
 <div class="lateral-cajas">
-    <div class="item-lateral">
-        <span class="icono">🏠</span>
-        <span class="texto">Inicio</span>
-    </div>
-    <div class="item-lateral">
-        <span class="icono">📡</span>
-        <span class="texto">RF Lab</span>
-    </div>
-    <div class="item-lateral">
-        <span class="icono">🔬</span>
-        <span class="texto">Ciencia</span>
-    </div>
+    <div class="item-lateral">🏠<br>Inicio</div>
+    <div class="item-lateral">📡<br>RF Lab</div>
+    <div class="item-lateral">🔬<br>Ciencia</div>
 </div>
 
-<!-- ENVUELVE TODO tu contenido con esto: -->
-<div class="contenido-con-margen">
-    <!-- PEGA AQUÍ todo tu HTML actual -->
-    <!-- Tu header, mission, sections, footer, etc. -->
+<!-- 2. ENVUELVE SOLO EL CONTENIDO INTERNO -->
+<div class="wrapper-contenido">
+    <!-- TU PÁGINA COMPLETA AQUÍ -->
 </div>
 
 <style>
-/* BARRA LATERAL */
+/* BARRA (igual que antes) */
 .lateral-cajas {
     position: fixed;
     left: 0;
@@ -214,9 +204,6 @@
 }
 
 .item-lateral {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     color: black;
     padding: 14px 10px;
     margin: 12px 0;
@@ -225,39 +212,22 @@
     border-radius: 8px;
     text-align: center;
     font-size: 13px;
-    transition: all 0.2s;
+    line-height: 1.4;
 }
 
-.item-lateral:hover {
-    background: white;
-    border-color: rgba(0,102,204,0.3);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-}
-
-.icono {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-.texto {
-    font-weight: 500;
-}
-
-/* CONTENIDO CON MARGEN (¡Solo esto se mueve!) */
-.contenido-con-margen {
+/* CONTENEDOR PARA MANTENER TU DISEÑO ORIGINAL */
+.wrapper-contenido {
     margin-left: 150px;
-    padding: 20px;
-    max-width: 800px; /* Opcional: mantener el ancho máximo que tenías */
-    margin-right: auto;
 }
 
-/* Si tu body tenía estilos específicos, mantenlos */
+/* Si tu body YA tiene esto (como en tu código): */
 body {
-    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
     line-height: 1.6;
-    margin: 0; /* Importante: quitar márgenes por defecto */
-    padding: 0;
 }
+/* ¡NO LO CAMBIES! El wrapper ya maneja el margen */
 </style>
     <header>
         <h1>Al-Hujjah☪circuits</h1>
