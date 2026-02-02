@@ -176,59 +176,76 @@
 
     
 <body>
-<!-- 1. BARRA LATERAL -->
-<div class="lateral-cajas">
-    <div class="item-lateral">🏠<br>Inicio</div>
-    <div class="item-lateral">📡<br>RF Lab</div>
-    <div class="item-lateral">🔬<br>Ciencia</div>
-</div>
-
-<!-- 2. ENVUELVE SOLO EL CONTENIDO INTERNO -->
-<div class="wrapper-contenido">
-    <!-- TU PÁGINA COMPLETA AQUÍ -->
+<!-- Barra lateral simple con secciones -->
+<div class="barra-lista">
+    <div class="grupo">
+        <div class="titulo-grupo">Navegación</div>
+        <a href="#inicio">Inicio</a>
+        <a href="#perfil">Perfil</a>
+    </div>
+    
+    <hr>
+    
+    <div class="grupo">
+        <div class="titulo-grupo">RF Lab</div>
+        <a href="#circuitos">Circuitos</a>
+        <a href="#antenas">Antenas</a>
+    </div>
+    
+    <hr>
+    
+    <div class="grupo">
+        <div class="titulo-grupo">Contenido</div>
+        <a href="#articulos">Artículos</a>
+        <a href="#blog">Blog</a>
+    </div>
 </div>
 
 <style>
-/* BARRA (igual que antes) */
-.lateral-cajas {
+.barra-lista {
     position: fixed;
     left: 0;
     top: 0;
-    width: 130px;
+    width: 180px;
     height: 100vh;
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(3px);
-    border-right: 1px solid rgba(255,255,255,0.1);
-    padding: 20px 10px;
-    z-index: 1000;
+    background: white;
+    padding: 15px;
+    border-right: 1px solid #ccc;
 }
 
-.item-lateral {
-    color: black;
-    padding: 14px 10px;
-    margin: 12px 0;
-    background: rgba(255,255,255,0.9);
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 8px;
-    text-align: center;
-    font-size: 13px;
-    line-height: 1.4;
+.titulo-grupo {
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: #333;
 }
 
-/* CONTENEDOR PARA MANTENER TU DISEÑO ORIGINAL */
-.wrapper-contenido {
-    margin-left: 150px;
+.barra-lista a {
+    display: block;
+    color: #0066cc;
+    text-decoration: none;
+    padding: 5px;
+    margin: 2px 0;
 }
 
-/* Si tu body YA tiene esto (como en tu código): */
+.barra-lista a:hover {
+    background: #f0f0f0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
 body {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    line-height: 1.6;
+    margin-left: 200px;
 }
-/* ¡NO LO CAMBIES! El wrapper ya maneja el margen */
 </style>
+
+
+
+
+    
     <header>
         <h1>Al-Hujjah☪circuits</h1>
         <p class="tagline">Dedicated to the awaited Imam of our times</p>
