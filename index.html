@@ -176,7 +176,7 @@
 
     
 <body>
-<!-- Listas en el costado sin "barra" -->
+<!-- Listas en el costado - Versión ajustada -->
 <div class="lista-costado">
     <div class="grupo-lista">
         <div class="titulo-lista">Navegación</div>
@@ -205,7 +205,7 @@
 <style>
 .lista-costado {
     position: fixed;
-    left: 20px;
+    left: 50px; /* MOVIDO MÁS AL CENTRO */
     top: 20px;
     width: 160px;
 }
@@ -216,18 +216,22 @@
 
 .titulo-lista {
     font-weight: bold;
-    color: #ffffff; /* BLANCO PURO */
+    color: #ffffff; /* BLANCO PURO (más claro) */
     margin-bottom: 8px;
     font-size: 14px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-align: left;
+    line-height: 1.4;
 }
 
 .item-lista {
-    color: #f0f0f0; /* BLANCO APAGADO */
-    padding: 5px 0;
+    color: #d0d0d0; /* BLANCO MÁS OSCURO (sublistas más oscuras) */
+    padding: 6px 0;
     font-size: 13px;
     cursor: pointer;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    text-align: left;
+    line-height: 1.4;
 }
 
 .item-lista:hover {
@@ -237,13 +241,13 @@
 
 .linea-separadora {
     height: 1px;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.25), transparent);
     margin: 15px 0;
     width: 100%;
 }
 
 body {
-    margin-left: 200px;
+    margin-left: 220px; /* Ajustado por el movimiento */
 }
 </style>
     <header>
